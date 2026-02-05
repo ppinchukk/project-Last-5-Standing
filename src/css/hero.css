@@ -55,6 +55,7 @@
   color: #fff;
   max-width: 135px;
   display: block;
+  cursor: pointer;
   border-radius: 100px;
   padding: 10px 24px;
   box-shadow:
@@ -65,6 +66,10 @@
     inset 0 32px 24px 0 rgba(255, 255, 255, 0.05);
   background-color: #6f4e37;
   border: none;
+  transition:
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-btn:hover,
@@ -75,7 +80,7 @@
     inset 0 0 0 1px #6f4e37,
     inset 0 2px 1px 0 rgba(255, 255, 255, 0.25),
     inset 0 32px 24px 0 #fff;
-  background: #6f4e37;
+  background-color: #6f4e37;
   opacity: 0.5;
 }
 
