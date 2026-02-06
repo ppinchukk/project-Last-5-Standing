@@ -1,0 +1,67 @@
+/*coffee-moments*/
+.coffee-moments-title {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  text-align: center;
+  margin: 0 auto 24px;
+
+  max-width: 288px;
+}
+.coffee-moments-text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
+  text-align: center;
+  margin: 0 auto 32px;
+  max-width: 288px;
+}
+.coffee-moments-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+.coffee-moments-item {
+  width: 100%;
+}
+.coffee-moments-item img {
+  border-radius: 32px;
+}
+@media screen and (min-width: 768px) {
+  .coffee-moments-title {
+    max-width: 704px;
+  }
+  .coffee-moments-text {
+    max-width: 704px;
+  }
+  .coffee-moments-list {
+    flex-direction: row;
+    gap: 32px;
+  }
+  .coffee-moments-item:not(:last-child) {
+    max-width: 336px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .coffee-moments-title {
+    font-size: 48px;
+    max-width: 768px;
+  }
+  .coffee-moments-text {
+    max-width: 768px;
+  }
+  .coffee-moments-list {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    max-height: 948px;
+    gap: 32px;
+  }
+  .coffee-moments-item:not(:last-child),
+  .coffee-moments-item:last-child {
+    max-width: 416px;
+  }
+}
