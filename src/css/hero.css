@@ -1,6 +1,7 @@
 .hero-container {
   display: flex;
   flex-direction: column;
+  padding: 0 32px;
 }
 
 .section-hero {
@@ -8,7 +9,6 @@
   padding-top: 108px;
   padding-bottom: 108px;
   max-width: 320px;
-  margin: 0 auto;
 
   background-image:
     linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)),
