@@ -1,14 +1,4 @@
-.welcome-container {
-  padding: 0 16px;
-}
-
-/* .secton-hero{
-    max-width: 320px;
-    margin: 0 auto;
-} */
-
 .section-subtitle {
-  padding-top: 64px;
   padding-bottom: 16px;
   font-weight: 600;
 }
@@ -18,14 +8,12 @@
   font-size: 36px;
   line-height: 1.2;
   letter-spacing: -0.01em;
-  padding-bottom: 67px;
 }
 
 .welcome-text {
   font-weight: 400;
   font-size: 18px;
-
-  padding-bottom: 32px;
+  margin-bottom: 32px;
 }
 
 .welcome-btn {
@@ -34,10 +22,12 @@
   align-items: center;
   justify-content: center;
   height: 44px;
-  width: 100%;
+  width: 288px;
   color: #fff;
   fill: #fff;
   gap: 12px;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 32px;
 
   box-shadow:
@@ -66,20 +56,22 @@
   display: block;
   align-items: center;
   margin: 0 auto;
+  max-width: 288px;
+}
+
+.welcome-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 67px;
 }
 
 @media screen and (min-width: 768px) {
-  .container {
-    padding: 0 32px;
-  }
-
   .welcome-title,
   .welcome-text {
     width: 336px;
   }
 
   .welcome-text {
-    padding-top: 64px;
   }
 
   .welcome-btn {
@@ -88,7 +80,17 @@
 
   .welcome-container {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
+  }
+
+  .welcome-wrapper {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .img-welcome {
+    max-width: 708px;
   }
 }
 
@@ -96,5 +98,9 @@
   .welcome-title,
   .welcome-text {
     width: 640px;
+  }
+
+  .img-welcome {
+    max-width: 1312px;
   }
 }
