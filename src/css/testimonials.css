@@ -1,8 +1,4 @@
 /* ⁡⁢⁢⁢ Styles for Mobile devices ⁡ */
-.testimonials-section {
-  margin: 64px auto;
-}
-
 .testimonials-title-wrapper {
   width: 288px;
 }
@@ -36,7 +32,7 @@
   gap: 24px;
 }
 
-.testimonial-card-content {
+.testimonials-card-content {
   display: flex;
   flex-direction: column;
   gap: 24px;
@@ -44,6 +40,7 @@
 
 .stars-container {
   display: flex;
+  gap: 4px;
 }
 
 .stars-item {
