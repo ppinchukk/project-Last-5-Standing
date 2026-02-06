@@ -62,7 +62,7 @@
 .welcome-wrapper {
   display: flex;
   flex-direction: column;
-  gap: 67px;
+  gap: 32px;
 }
 
 @media screen and (min-width: 768px) {
@@ -76,6 +76,7 @@
 
   .welcome-btn {
     width: 181px;
+    margin-left: 0;
   }
 
   .welcome-container {
@@ -85,7 +86,6 @@
   }
 
   .welcome-wrapper {
-    display: flex;
     flex-direction: row;
   }
 
