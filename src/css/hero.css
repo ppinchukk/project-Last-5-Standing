@@ -114,6 +114,10 @@
 }
 
 @media screen and (min-width: 1440px) {
+  .hero-container {
+    padding: 0 64px;
+  }
+
   .section-hero {
     padding-top: 259px;
     padding-bottom: 259px;
