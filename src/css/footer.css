@@ -40,7 +40,18 @@
 
 .footer-social-item {}
 
-.footer-social-link {}
+.footer-social-link {
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-social-link:focus,
+.footer-social-link:hover {
+    opacity: 0.5;
+}
+
+.footer-social-link:active {
+    opacity: 1;
+}
 
 .social-icon {
     display: block;
@@ -58,7 +69,9 @@
 
 .footer-nav-item {}
 
-.footer-nav-link {}
+.footer-nav-link {
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 .footer-nav-link:hover,
 .footer-nav-link:focus {
