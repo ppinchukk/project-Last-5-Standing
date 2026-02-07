@@ -1,1 +1,70 @@
-<section>Subscribe</section>
+<section class="section">
+  <div class="container">
+    <div class="subscription-main">
+      <div class="subscription-info">
+        <div class="subscription-content">
+          <h2 class="subscription-title">Join Our Coffee Community</h2>
+          <p class="subscription-text">
+            Experience the joy of coffee delivered right to your door. Sign up
+            today!
+          </p>
+        </div>
+        <form class="subscribe-form">
+          <div class="subscribe-form-group">
+            <div class="subscribe-form-wrapper">
+              <div class="label-position">
+                <input
+                  type="email"
+                  id="subscribe-email"
+                  name="subscribe-email"
+                  placeholder="Your Email Here"
+                  class="subscribe-input"
+                  required />
+                <label for="subscribe-email" class="subscribe-email-label">
+                  Invalid email address. Please enter a valid email.
+                </label>
+              </div>
+              <button type="submit" class="subscribe-btn">
+                <span class="subscribe-btn-content">
+                  Subscribe
+                  <svg class="subscribe-icon" width="24" height="24">
+                    <use href="/img/icons.svg#icon-chevron"></use>
+                  </svg>
+                </span>
+              </button>
+            </div>
+            <p class="subscribe-policy">
+              By clicking Get Started, you agree to our Terms and Conditions.
+            </p>
+          </div>
+        </form>
+      </div>
+      <div class="subscription-media">
+        <picture>
+          <source
+            srcset="
+              /img/subscribe/mob-subscription-img.jpg    1x,
+              /img/subscribe/mob-subscription-img@2x.jpg 2x
+            "
+            media="(max-width: 767px)" />
+          <source
+            srcset="
+              /img/subscribe/tab-subscription-img.jpg    1x,
+              /img/subscribe/tab-subscription-img@2x.jpg 2x
+            "
+            media="(min-width: 768px) and (max-width: 1439px)" />
+          <source
+            srcset="
+              /img/subscribe/desk-subscription-img.jpg    1x,
+              /img/subscribe/desk-subscription-img@2x.jpg 2x
+            "
+            media="(min-width: 1440px)" />
+          <img
+            src="/img/subscribe/tab-subscription-img.jpg"
+            alt="People working together at a wooden table with coffee in a cozy workspace"
+            loading="lazy" />
+        </picture>
+      </div>
+    </div>
+  </div>
+</section>
