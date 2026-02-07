@@ -10,29 +10,33 @@
           </p>
         </div>
         <form class="subscribe-form">
-          <div class="subscribe-form-wrapper">
-            <input
-              type="email"
-              id="subscribe-email"
-              name="subscribe-email"
-              placeholder="Your Email Here"
-              class="subscribe-input"
-              reguired />
-            <label for="subscribe-email" class="subscribe-email-label">
-              Subscription
-            </label>
-            <button type="submit" class="subscribe-btn">
-              <span class="subscribe-btn-content">
-                Subscribe
-                <svg class="subscribe-icon" width="24" height="24">
-                  <use href="/img/icons.svg#icon-chevron"></use>
-                </svg>
-              </span>
-            </button>
+          <div class="subscribe-form-group">
+            <div class="subscribe-form-wrapper">
+              <div class="label-position">
+                <input
+                  type="email"
+                  id="subscribe-email"
+                  name="subscribe-email"
+                  placeholder="Your Email Here"
+                  class="subscribe-input"
+                  required />
+                <label for="subscribe-email" class="subscribe-email-label">
+                  Invalid email address. Please enter a valid email.
+                </label>
+              </div>
+              <button type="submit" class="subscribe-btn">
+                <span class="subscribe-btn-content">
+                  Subscribe
+                  <svg class="subscribe-icon" width="24" height="24">
+                    <use href="/img/icons.svg#icon-chevron"></use>
+                  </svg>
+                </span>
+              </button>
+            </div>
+            <p class="subscribe-policy">
+              By clicking Get Started, you agree to our Terms and Conditions.
+            </p>
           </div>
-          <p class="subscribe-policy">
-            By clicking Get Started, you agree to our Terms and Conditions.
-          </p>
         </form>
       </div>
       <div class="subscription-media">

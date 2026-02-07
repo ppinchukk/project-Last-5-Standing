@@ -1,14 +1,12 @@
 .subscription-main {
   display: flex;
   flex-direction: column;
-  align-items: center;
   gap: 32px;
 }
 
 .subscription-info {
   display: flex;
   flex-direction: column;
-  align-items: center;
   gap: 32px;
 }
 
@@ -24,21 +22,23 @@
   font-size: 36px;
   line-height: 1.2;
   letter-spacing: -0.01em;
-  max-width: 288px;
 }
 
 .subscription-text {
   font-size: 18px;
-  max-width: 288px;
 }
 
 .subscribe-form-wrapper {
   display: flex;
-  position: relative;
   flex-direction: column;
   align-items: center;
+  width: 100%;
   gap: 24px;
-  margin-bottom: 16px;
+}
+
+.label-position {
+  position: relative;
+  width: 100%;
 }
 
 .subscribe-email-label {
@@ -47,11 +47,31 @@
   left: 0;
   font-size: 12px;
   color: #7f1c1c;
+  opacity: 0;
+  transform: translateY(-4px);
+  transition:
+    opacity 200ms ease,
+    transform 200ms ease;
+  pointer-events: none;
+}
+
+.subscribe-input:focus:invalid + .subscribe-email-label {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.subscribe-input:invalid {
+  border: 1px solid rgba(11, 8, 3, 0.15);
+  color: #0b0803;
+}
+
+.subscribe-input:focus:invalid {
+  border: 1px solid #7f1c1c;
+  color: #7f1c1c;
 }
 
 .subscribe-input {
-  border-radius: 12px;
-  width: 288px;
+  width: 100%;
   height: 40px;
   background-color: rgba(255, 255, 255, 0);
   border: 1px solid rgba(11, 8, 3, 0.15);
@@ -71,15 +91,6 @@
   outline: none;
 }
 
-.subscribe-input:invalid {
-  border: 1px solid #7f1c1c;
-  color: #7f1c1c;
-}
-
-.subscription-media {
-  width: 100%;
-}
-
 .subscription-media img {
   border-radius: 40px;
   width: 100%;
@@ -88,7 +99,7 @@
 .subscribe-btn {
   border-radius: 100px;
   padding: 10px 24px;
-  width: 288px;
+  width: 100%;
   height: 44px;
   box-shadow:
     0 1px 2px 0 rgba(11, 8, 3, 0.05),
@@ -128,7 +139,13 @@
 .subscribe-policy {
   font-size: 12px;
   text-align: start;
-  max-width: 288px;
+}
+
+.subscribe-form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
 }
 
 @media screen and (min-width: 768px) {
@@ -136,18 +153,8 @@
     align-items: flex-start;
   }
 
-  .subscription-info {
-    align-items: start;
-  }
-
-  .subscription-media {
-    max-width: 704px;
-  }
-
-  .subscription-title {
-    max-width: 704px;
-  }
-
+  .subscription-media,
+  .subscription-title,
   .subscription-text {
     max-width: 704px;
   }
@@ -156,18 +163,22 @@
     flex-direction: row;
   }
 
-  .subscribe-input {
+  .label-position {
     width: 340px;
+  }
+
+  .subscribe-input {
     height: 44px;
   }
 
   .subscribe-btn {
+    min-width: 0;
     width: 158px;
     height: 44px;
   }
 
-  .subscribe-policy {
-    max-width: 522px;
+  .subscribe-form-group {
+    align-items: flex-start;
   }
 }
 
@@ -187,9 +198,5 @@
   .subscription-title {
     font-size: 48px;
     max-width: 640px;
-  }
-
-  .subscribe-policy {
-    max-width: 513px;
   }
 }
