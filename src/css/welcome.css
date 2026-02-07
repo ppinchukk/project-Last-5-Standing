@@ -41,7 +41,8 @@
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.welcome-btn:hover {
+.welcome-btn:hover,
+.welcome-btn:focus {
   opacity: 0.5;
 }
 
