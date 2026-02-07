@@ -3,6 +3,7 @@
   padding-top: 18px;
   padding-bottom: 18px;
   align-items: center;
+  max-width: 320px;
 }
 
 .header-logo {
@@ -24,6 +25,9 @@
 }
 
 @media screen and (min-width: 768px) {
+  .header-container {
+    max-width: 768px;
+  }
   .icon-menu {
     display: none;
   }
@@ -45,5 +49,11 @@
 
   .nav-list-item:active {
     opacity: 1;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .header-container {
+    max-width: 1440px;
   }
 }
