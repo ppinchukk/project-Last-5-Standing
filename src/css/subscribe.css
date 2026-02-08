@@ -55,7 +55,7 @@
   pointer-events: none;
 }
 
-.subscribe-input:focus:invalid+.subscribe-email-label {
+.subscribe-input:focus:invalid + .subscribe-email-label {
   opacity: 1;
   transform: translateY(0);
 }
@@ -73,7 +73,7 @@
 .subscribe-input {
   width: 100%;
   height: 40px;
-  background-color: transparent;
+  background-color: #e0cbb4;
   border: 1px solid rgba(11, 8, 3, 0.15);
   border-radius: 12px;
   padding: 8px 12px;
@@ -81,6 +81,16 @@
   font-size: 16px;
   line-height: 1.5;
   color: #0b0803;
+}
+
+.subscribe-input:-webkit-autofill,
+.subscribe-input:-webkit-autofill:hover,
+.subscribe-input:-webkit-autofill:focus,
+.subscribe-input:-webkit-autofill:active {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: #0b0803 !important;
+  transition: background-color 9999s ease-in-out 0s;
+  box-shadow: inset 0 0 0 1000px transparent !important;
 }
 
 .subscribe-input::placeholder {
