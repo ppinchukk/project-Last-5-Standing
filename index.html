@@ -21,29 +21,30 @@
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" crossorigin href="/coffee-joy-project-6/assets/index-Cv1FojrD.css">
+    <script type="module" crossorigin src="/coffee-joy-project-6/index.js"></script>
+    <link rel="stylesheet" crossorigin href="/coffee-joy-project-6/assets/index-DMRo70ki.css">
   </head>
   <body>
     <header class="header">
   <div class="container header-container">
     <a href="" class="header-logo"
-      ><svg width="84" height="36" class="logo-icon">
+      ><svg width="63" height="36" class="logo-icon">
         <use href="/coffee-joy-project-6/assets/icons-Dvcdzyf7.svg#icon-logo"></use>
       </svg>
     </a>
     <nav class="nav-list">
-      <a class="nav-list-item" href="">About us</a>
-      <a class="nav-list-item" href="">Benefits</a>
-      <a class="nav-list-item" href="">Gallery</a>
-      <a class="nav-list-item" href="">Testimonial</a>
-      <a class="nav-list-item" href="">Location</a>
+      <a class="nav-list-item" href="#about-us">About us</a>
+      <a class="nav-list-item" href="#benefits">Benefits</a>
+      <a class="nav-list-item" href="#gallery">Gallery</a>
+      <a class="nav-list-item" href="#testimonials">Testimonial</a>
+      <a class="nav-list-item" href="#location">Location</a>
     </nav>
 
-    <a href="" class="icon-menu"
-      ><svg width="24" height="24">
+    <button type="button" class="menu-burger-btn" data-menu-open>
+      <svg width="24" height="24" class="burger-icon">
         <use href="/coffee-joy-project-6/assets/icons-Dvcdzyf7.svg#icon-menu"></use>
       </svg>
-    </a>
+    </button>
   </div>
 </header>
 
@@ -57,11 +58,11 @@
       At CoffeeJoy, we believe every cup tells a story. Join us in exploring the
       rich flavors and aromas of our carefully curated coffee selections.
     </p>
-    <a href="" class="hero-btn">Learn More</a>
+    <a href="#benefits" class="hero-btn">Learn More</a>
   </div>
 </section>
 
-      <section class="section">
+      <section class="section" id="about-us">
   <div class="container welcome-container">
     <div class="welcome-wrapper">
       <div class="left-content">
@@ -77,7 +78,7 @@
           roasting them to perfection, ensuring each sip is a delight.
         </p>
 
-        <a href="" class="welcome-btn"
+        <a href="#location" class="welcome-btn"
           >Find location<svg width="20" height="20">
             <use href="/coffee-joy-project-6/assets/icons-Dvcdzyf7.svg#icon-map-pin"></use>
           </svg>
@@ -109,7 +110,7 @@
   </div>
 </section>
 
-      <section class="section quality-section">
+      <section class="section quality-section" id="benefits">
   <div class="container quality-container">
     <p class="quality-subtitle">Quality</p>
     <h2 class="quality-title">Why CoffeeJoy Stands Out from the Rest</h2>
@@ -207,7 +208,7 @@
   </div>
 </section>
 
-      <section class="section coffee-moments-section">
+      <section class="section coffee-moments-section" id="gallery">
   <div class="container coffee-moments-container">
     <h2 class="coffee-moments-title">Coffee Moments</h2>
     <p class="coffee-moments-text">
@@ -383,7 +384,7 @@
             today!
           </p>
         </div>
-        <form class="subscribe-form">
+        <form class="subscribe-form" id="subscribe-form">
           <div class="subscribe-form-group">
             <div class="subscribe-form-wrapper">
               <div class="label-position">
@@ -393,12 +394,13 @@
                   name="subscribe-email"
                   placeholder="Your Email Here"
                   class="subscribe-input"
-                  required />
+                  required
+                />
                 <label for="subscribe-email" class="subscribe-email-label">
                   Invalid email address. Please enter a valid email.
                 </label>
               </div>
-              <button type="submit" class="subscribe-btn">
+              <button type="submit" class="subscribe-btn" modal-open>
                 <span class="subscribe-btn-content">
                   Subscribe
                   <svg class="subscribe-icon" width="24" height="24">
@@ -417,24 +419,28 @@
         <picture>
           <source
             srcset="/coffee-joy-project-6/assets/mob-subscription-img-c4pCuvce.jpg 1x, /coffee-joy-project-6/assets/mob-subscription-img@2x-CfLSGMuL.jpg 2x"
-            media="(max-width: 767px)" />
+            media="(max-width: 767px)"
+          />
           <source
             srcset="/coffee-joy-project-6/assets/tab-subscription-img-CaGK6kq-.jpg 1x, /coffee-joy-project-6/assets/tab-subscription-img@2x-CzFy5HNL.jpg 2x"
-            media="(min-width: 768px) and (max-width: 1439px)" />
+            media="(min-width: 768px) and (max-width: 1439px)"
+          />
           <source
             srcset="/coffee-joy-project-6/assets/desk-subscription-img-CoIGQP7e.jpg 1x, /coffee-joy-project-6/assets/desk-subscription-img@2x-B5CSLPto.jpg 2x"
-            media="(min-width: 1440px)" />
+            media="(min-width: 1440px)"
+          />
           <img
             src="/coffee-joy-project-6/assets/tab-subscription-img-CaGK6kq-.jpg"
             alt="People working together at a wooden table with coffee in a cozy workspace"
-            loading="lazy" />
+            loading="lazy"
+          />
         </picture>
       </div>
     </div>
   </div>
 </section>
 
-      <section class="section">
+      <section class="section" id="testimonials">
   <div class="container">
     <div class="testimonials-title-wrapper">
       <h2 class="testimonials-title">What our visitors say</h2>
@@ -780,7 +786,7 @@
   </div>
 </section>
 
-      <section>Location</section>
+      <section class="section" id="location">Location</section>
 
     </main>
 
@@ -822,19 +828,19 @@
       </div>
       <ul class="footer-nav-list">
         <li class="footer-nav-item">
-          <a href="" class="footer-nav-link">About us</a>
+          <a href="#about-us" class="footer-nav-link">About us</a>
         </li>
         <li class="footer-nav-item">
-          <a href="" class="footer-nav-link">Benefits</a>
+          <a href="#benefits" class="footer-nav-link">Benefits</a>
         </li>
         <li class="footer-nav-item">
-          <a href="" class="footer-nav-link">Gallery</a>
+          <a href="#gallery" class="footer-nav-link">Gallery</a>
         </li>
         <li class="footer-nav-item">
-          <a href="" class="footer-nav-link">Testimonial</a>
+          <a href="#testimonials" class="footer-nav-link">Testimonial</a>
         </li>
         <li class="footer-nav-item">
-          <a href="" class="footer-nav-link">Location</a>
+          <a href="#location" class="footer-nav-link">Location</a>
         </li>
       </ul>
     </div>
@@ -842,7 +848,7 @@
   </div>
 </footer>
 
-    <div class="mobile-menu is-open">
+    <div class="mobile-menu" data-menu>
   <div class="container mobile-menu-container">
     <div class="mobile-menu-header">
       <a href="" class="header-logo-mobile"
@@ -851,7 +857,7 @@
         </svg>
       </a>
 
-      <button class="header-btn-close" type="button">
+      <button class="header-btn-close" type="button" data-menu-close>
         <svg width="24" height="24" class="menu-close-icon">
           <use href="/coffee-joy-project-6/assets/icons-Dvcdzyf7.svg#icon-close"></use>
         </svg>
@@ -859,18 +865,18 @@
     </div>
 
     <nav class="nav-list-mobile">
-      <a class="nav-list-item-mobile" href="">About us</a>
-      <a class="nav-list-item-mobile" href="">Benefits</a>
-      <a class="nav-list-item-mobile" href="">Gallery</a>
-      <a class="nav-list-item-mobile" href="">Testimonial</a>
-      <a class="nav-list-item-mobile" href="">Location</a>
+      <a class="nav-list-item-mobile" href="#about-us">About us</a>
+      <a class="nav-list-item-mobile" href="#benefits">Benefits</a>
+      <a class="nav-list-item-mobile" href="#gallery">Gallery</a>
+      <a class="nav-list-item-mobile" href="#testimonials">Testimonial</a>
+      <a class="nav-list-item-mobile" href="#location">Location</a>
     </nav>
   </div>
 </div>
 
-    <div class="backdrop">
+    <div class="backdrop" modal>
   <div class="modal">
-    <button type="button" class="modal-close-btn">
+    <button type="button" class="modal-close-btn" modal-close1>
       <svg class="modal-close-icon" width="32" height="32">
         <use href="/coffee-joy-project-6/assets/icons-Dvcdzyf7.svg#icon-close"></use>
       </svg>
@@ -899,11 +905,10 @@
         width="644"
       />
     </picture>
-    <button class="modal-btn" type="button">Close</button>
+    <button class="modal-btn" type="button" modal-close2>Close</button>
   </div>
 </div>
 
 
-    <script src="./main.js"></script>
   </body>
 </html>
