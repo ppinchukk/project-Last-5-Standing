@@ -11,19 +11,34 @@
   pointer-events: none;
 }
 
-.header-logo-mobile {
-  display: block;
-  padding: 18px 0 18px 16px;
-}
-
-.mobile-icon {
+.mobile-menu-header {
   display: flex;
   align-items: center;
 }
 
-.header-icon-close {
-  margin-left: auto;
+.header-logo-mobile {
+  display: block;
+  padding: 18px 10px;
 }
+
+/* .logo-icon {} */
+
+.header-btn-close {
+  margin-left: auto;
+  padding: 12px;
+  background-color: transparent;
+}
+
+.header-btn-close:hover,
+.header-btn-close:focus {
+  opacity: 0.5;
+}
+
+.header-btn-close:active {
+  opacity: 1;
+}
+
+/* .menu-close-icon {} */
 
 .nav-list-mobile {
   display: flex;
