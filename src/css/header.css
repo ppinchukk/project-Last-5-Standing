@@ -1,24 +1,25 @@
 .header-container {
   display: flex;
-  padding-top: 18px;
-  padding-bottom: 18px;
   align-items: center;
   max-width: 320px;
 }
 
 .header-logo {
   display: block;
+  padding: 18px 10px;
 }
 
 .logo-icon {
   display: block;
 }
 
-.icon-menu {
-  display: flex;
-  align-items: center;
+.menu-burger-btn {
+  padding: 12px;
   margin-left: auto;
+  background-color: transparent;
 }
+
+.burger-icon {}
 
 .nav-list {
   display: none;
@@ -28,7 +29,8 @@
   .header-container {
     max-width: 768px;
   }
-  .icon-menu {
+
+  .menu-burger-btn {
     display: none;
   }
 
