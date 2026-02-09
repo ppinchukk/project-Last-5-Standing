@@ -22,7 +22,7 @@
     />
 
     <script type="module" crossorigin src="/project-Last-5-Standing/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/project-Last-5-Standing/assets/index-Dx14qMrC.css">
+    <link rel="stylesheet" crossorigin href="/project-Last-5-Standing/assets/index-Cjs5S101.css">
   </head>
   <body>
     <header class="header">
@@ -395,10 +395,12 @@
                   name="subscribe-email"
                   placeholder="Your Email Here"
                   class="subscribe-input"
-                  required
-                />
-                <label for="subscribe-email" class="subscribe-email-label">
+                  required />
+                <span class="subscribe-email-error">
                   Invalid email address. Please enter a valid email.
+                </span>
+                <label for="subscribe-email" class="visually-hidden">
+                  Subscribe
                 </label>
               </div>
               <button type="submit" class="subscribe-btn" data-modal-open>
@@ -420,21 +422,17 @@
         <picture>
           <source
             srcset="/project-Last-5-Standing/assets/mob-subscription-img-c4pCuvce.jpg 1x, /project-Last-5-Standing/assets/mob-subscription-img@2x-CfLSGMuL.jpg 2x"
-            media="(max-width: 767px)"
-          />
+            media="(max-width: 767px)" />
           <source
             srcset="/project-Last-5-Standing/assets/tab-subscription-img-CaGK6kq-.jpg 1x, /project-Last-5-Standing/assets/tab-subscription-img@2x-CzFy5HNL.jpg 2x"
-            media="(min-width: 768px) and (max-width: 1439px)"
-          />
+            media="(min-width: 768px) and (max-width: 1439px)" />
           <source
             srcset="/project-Last-5-Standing/assets/desk-subscription-img-CoIGQP7e.jpg 1x, /project-Last-5-Standing/assets/desk-subscription-img@2x-B5CSLPto.jpg 2x"
-            media="(min-width: 1440px)"
-          />
+            media="(min-width: 1440px)" />
           <img
             src="/project-Last-5-Standing/assets/tab-subscription-img-CaGK6kq-.jpg"
             alt="People working together at a wooden table with coffee in a cozy workspace"
-            loading="lazy"
-          />
+            loading="lazy" />
         </picture>
       </div>
     </div>
@@ -446,342 +444,286 @@
     <div class="testimonials-title-wrapper">
       <h2 class="testimonials-title">What our visitors say</h2>
     </div>
+
     <ul class="testimonials-cards">
       <li class="testimonials-item">
-        <div class="card-wrapper">
-          <ul class="testimonials-card-content">
-            <li>
-              <ul class="stars-container">
-                <li class="stars-item">
-                  <svg class="star-filled-icon" width="20" height="19">
-                    <use href="/project-Last-5-Standing/assets/icons-B1gzs8Ny.svg#icon-star-filled"></use>
-                  </svg>
-                </li>
-                <li class="stars-item">
-                  <svg class="star-filled-icon" width="20" height="19">
-                    <use href="/project-Last-5-Standing/assets/icons-B1gzs8Ny.svg#icon-star-filled"></use>
-                  </svg>
-                </li>
-                <li class="stars-item">
-                  <svg class="star-filled-icon" width="20" height="19">
-                    <use href="/project-Last-5-Standing/assets/icons-B1gzs8Ny.svg#icon-star-filled"></use>
-                  </svg>
-                </li>
-                <li class="stars-item">
-                  <svg class="star-filled-icon" width="20" height="19">
-                    <use href="/project-Last-5-Standing/assets/icons-B1gzs8Ny.svg#icon-star-filled"></use>
-                  </svg>
-                </li>
-                <li class="stars-item">
-                  <svg class="star-outline-icon" width="20" height="19">
-                    <use href="/project-Last-5-Standing/assets/icons-B1gzs8Ny.svg#icon-star-outline"></use>
-                  </svg>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <p class="card-comment">
-                "Every cup feels like a warm hug! I’m addicted to their seasonal
-                flavors!"
-              </p>
-            </li>
-          </ul>
-          <p class="card-comment-author">Name Surname</p>
-        </div>
+        <ul class="stars-container">
+          <li class="stars-item">
+            <svg class="star-filled-icon" width="20" height="19">
+              <use href="/project-Last-5-Standing/assets/icons-B1gzs8Ny.svg#icon-star-filled"></use>
+            </svg>
+          </li>
+          <li class="stars-item">
+            <svg class="star-filled-icon" width="20" height="19">
+              <use href="/project-Last-5-Standing/assets/icons-B1gzs8Ny.svg#icon-star-filled"></use>
+            </svg>
+          </li>
+          <li class="stars-item">
+            <svg class="star-filled-icon" width="20" height="19">
+              <use href="/project-Last-5-Standing/assets/icons-B1gzs8Ny.svg#icon-star-filled"></use>
+            </svg>
+          </li>
+          <li class="stars-item">
+            <svg class="star-filled-icon" width="20" height="19">
+              <use href="/project-Last-5-Standing/assets/icons-B1gzs8Ny.svg#icon-star-filled"></use>
+            </svg>
+          </li>
+          <li class="stars-item">
+            <svg class="star-outline-icon" width="20" height="19">
+              <use href="/project-Last-5-Standing/assets/icons-B1gzs8Ny.svg#icon-star-outline"></use>
+            </svg>
+          </li>
+        </ul>
+        <p class="card-comment">
+          "Every cup feels like a warm hug! I’m addicted to their seasonal
+          flavors!"
+        </p>
+        <p class="card-comment-author">Name Surname</p>
       </li>
+
       <li class="testimonials-item">
-        <div class="card-wrapper">
-          <ul class="testimonials-card-content">
-            <li>
-              <ul class="stars-container">
-                <li class="stars-item">
-                  <svg class="star-filled-icon" width="20" height="19">
-                    <use href="/project-Last-5-Standing/assets/icons-B1gzs8Ny.svg#icon-star-filled"></use>
-                  </svg>
-                </li>
-                <li class="stars-item">
-                  <svg class="star-filled-icon" width="20" height="19">
-                    <use href="/project-Last-5-Standing/assets/icons-B1gzs8Ny.svg#icon-star-filled"></use>
-                  </svg>
-                </li>
-                <li class="stars-item">
-                  <svg class="star-filled-icon" width="20" height="19">
-                    <use href="/project-Last-5-Standing/assets/icons-B1gzs8Ny.svg#icon-star-filled"></use>
-                  </svg>
-                </li>
-                <li class="stars-item">
-                  <svg class="star-filled-icon" width="20" height="19">
-                    <use href="/project-Last-5-Standing/assets/icons-B1gzs8Ny.svg#icon-star-filled"></use>
-                  </svg>
-                </li>
-                <li class="stars-item">
-                  <svg class="star-outline-icon" width="20" height="19">
-                    <use href="/project-Last-5-Standing/assets/icons-B1gzs8Ny.svg#icon-star-outline"></use>
-                  </svg>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <p class="card-comment">
-                "CoffeeJoy is my go-to place for a perfect cup of coffee! The
-                ambiance is so inviting, and the baristas are always friendly."
-              </p>
-            </li>
-          </ul>
-          <p class="card-comment-author">Alice Johnson</p>
-        </div>
+        <ul class="stars-container">
+          <li class="stars-item">
+            <svg class="star-filled-icon" width="20" height="19">
+              <use href="/project-Last-5-Standing/assets/icons-B1gzs8Ny.svg#icon-star-filled"></use>
+            </svg>
+          </li>
+          <li class="stars-item">
+            <svg class="star-filled-icon" width="20" height="19">
+              <use href="/project-Last-5-Standing/assets/icons-B1gzs8Ny.svg#icon-star-filled"></use>
+            </svg>
+          </li>
+          <li class="stars-item">
+            <svg class="star-filled-icon" width="20" height="19">
+              <use href="/project-Last-5-Standing/assets/icons-B1gzs8Ny.svg#icon-star-filled"></use>
+            </svg>
+          </li>
+          <li class="stars-item">
+            <svg class="star-filled-icon" width="20" height="19">
+              <use href="/project-Last-5-Standing/assets/icons-B1gzs8Ny.svg#icon-star-filled"></use>
+            </svg>
+          </li>
+          <li class="stars-item">
+            <svg class="star-outline-icon" width="20" height="19">
+              <use href="/project-Last-5-Standing/assets/icons-B1gzs8Ny.svg#icon-star-outline"></use>
+            </svg>
+          </li>
+        </ul>
+        <p class="card-comment">
+          "CoffeeJoy is my go-to place for a perfect cup of coffee! The ambiance
+          is so inviting, and the baristas are always friendly."
+        </p>
+        <p class="card-comment-author">Alice Johnson</p>
       </li>
+
       <li class="testimonials-item">
-        <div class="card-wrapper">
-          <ul class="testimonials-card-content">
-            <li>
-              <ul class="stars-container">
-                <li class="stars-item">
-                  <svg class="star-filled-icon" width="20" height="19">
-                    <use href="/project-Last-5-Standing/assets/icons-B1gzs8Ny.svg#icon-star-filled"></use>
-                  </svg>
-                </li>
-                <li class="stars-item">
-                  <svg class="star-filled-icon" width="20" height="19">
-                    <use href="/project-Last-5-Standing/assets/icons-B1gzs8Ny.svg#icon-star-filled"></use>
-                  </svg>
-                </li>
-                <li class="stars-item">
-                  <svg class="star-filled-icon" width="20" height="19">
-                    <use href="/project-Last-5-Standing/assets/icons-B1gzs8Ny.svg#icon-star-filled"></use>
-                  </svg>
-                </li>
-                <li class="stars-item">
-                  <svg class="star-filled-icon" width="20" height="19">
-                    <use href="/project-Last-5-Standing/assets/icons-B1gzs8Ny.svg#icon-star-filled"></use>
-                  </svg>
-                </li>
-                <li class="stars-item">
-                  <svg class="star-filled-icon" width="20" height="19">
-                    <use href="/project-Last-5-Standing/assets/icons-B1gzs8Ny.svg#icon-star-filled"></use>
-                  </svg>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <p class="card-comment">
-                "I love the variety of blends offered at CoffeeJoy. Every visit
-                feels like a new experience!"
-              </p>
-            </li>
-          </ul>
-          <p class="card-comment-author">Michael Smith</p>
-        </div>
+        <ul class="stars-container">
+          <li class="stars-item">
+            <svg class="star-filled-icon" width="20" height="19">
+              <use href="/project-Last-5-Standing/assets/icons-B1gzs8Ny.svg#icon-star-filled"></use>
+            </svg>
+          </li>
+          <li class="stars-item">
+            <svg class="star-filled-icon" width="20" height="19">
+              <use href="/project-Last-5-Standing/assets/icons-B1gzs8Ny.svg#icon-star-filled"></use>
+            </svg>
+          </li>
+          <li class="stars-item">
+            <svg class="star-filled-icon" width="20" height="19">
+              <use href="/project-Last-5-Standing/assets/icons-B1gzs8Ny.svg#icon-star-filled"></use>
+            </svg>
+          </li>
+          <li class="stars-item">
+            <svg class="star-filled-icon" width="20" height="19">
+              <use href="/project-Last-5-Standing/assets/icons-B1gzs8Ny.svg#icon-star-filled"></use>
+            </svg>
+          </li>
+          <li class="stars-item">
+            <svg class="star-filled-icon" width="20" height="19">
+              <use href="/project-Last-5-Standing/assets/icons-B1gzs8Ny.svg#icon-star-filled"></use>
+            </svg>
+          </li>
+        </ul>
+        <p class="card-comment">
+          "I love the variety of blends offered at CoffeeJoy. Every visit feels
+          like a new experience!"
+        </p>
+        <p class="card-comment-author">Michael Smith</p>
       </li>
+
       <li class="testimonials-item">
-        <div class="card-wrapper">
-          <ul class="testimonials-card-content">
-            <li>
-              <ul class="stars-container">
-                <li class="stars-item">
-                  <svg class="star-filled-icon" width="20" height="19">
-                    <use href="/project-Last-5-Standing/assets/icons-B1gzs8Ny.svg#icon-star-filled"></use>
-                  </svg>
-                </li>
-                <li class="stars-item">
-                  <svg class="star-filled-icon" width="20" height="19">
-                    <use href="/project-Last-5-Standing/assets/icons-B1gzs8Ny.svg#icon-star-filled"></use>
-                  </svg>
-                </li>
-                <li class="stars-item">
-                  <svg class="star-filled-icon" width="20" height="19">
-                    <use href="/project-Last-5-Standing/assets/icons-B1gzs8Ny.svg#icon-star-filled"></use>
-                  </svg>
-                </li>
-                <li class="stars-item">
-                  <svg class="star-outline-icon" width="20" height="19">
-                    <use href="/project-Last-5-Standing/assets/icons-B1gzs8Ny.svg#icon-star-outline"></use>
-                  </svg>
-                </li>
-                <li class="stars-item">
-                  <svg class="star-outline-icon" width="20" height="19">
-                    <use href="/project-Last-5-Standing/assets/icons-B1gzs8Ny.svg#icon-star-outline"></use>
-                  </svg>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <p class="card-comment">
-                "The pastries are to die for! I can’t resist pairing them with
-                my favorite latte. Highly recommend this spot!"
-              </p>
-            </li>
-          </ul>
-          <p class="card-comment-author">Emily Davis</p>
-        </div>
+        <ul class="stars-container">
+          <li class="stars-item">
+            <svg class="star-filled-icon" width="20" height="19">
+              <use href="/project-Last-5-Standing/assets/icons-B1gzs8Ny.svg#icon-star-filled"></use>
+            </svg>
+          </li>
+          <li class="stars-item">
+            <svg class="star-filled-icon" width="20" height="19">
+              <use href="/project-Last-5-Standing/assets/icons-B1gzs8Ny.svg#icon-star-filled"></use>
+            </svg>
+          </li>
+          <li class="stars-item">
+            <svg class="star-filled-icon" width="20" height="19">
+              <use href="/project-Last-5-Standing/assets/icons-B1gzs8Ny.svg#icon-star-filled"></use>
+            </svg>
+          </li>
+          <li class="stars-item">
+            <svg class="star-outline-icon" width="20" height="19">
+              <use href="/project-Last-5-Standing/assets/icons-B1gzs8Ny.svg#icon-star-outline"></use>
+            </svg>
+          </li>
+          <li class="stars-item">
+            <svg class="star-outline-icon" width="20" height="19">
+              <use href="/project-Last-5-Standing/assets/icons-B1gzs8Ny.svg#icon-star-outline"></use>
+            </svg>
+          </li>
+        </ul>
+        <p class="card-comment">
+          "The pastries are to die for! I can’t resist pairing them with my
+          favorite latte. Highly recommend this spot!"
+        </p>
+        <p class="card-comment-author">Emily Davis</p>
       </li>
+
       <li class="testimonials-item">
-        <div class="card-wrapper">
-          <ul class="testimonials-card-content">
-            <li>
-              <ul class="stars-container">
-                <li class="stars-item">
-                  <svg class="star-filled-icon" width="20" height="19">
-                    <use href="/project-Last-5-Standing/assets/icons-B1gzs8Ny.svg#icon-star-filled"></use>
-                  </svg>
-                </li>
-                <li class="stars-item">
-                  <svg class="star-filled-icon" width="20" height="19">
-                    <use href="/project-Last-5-Standing/assets/icons-B1gzs8Ny.svg#icon-star-filled"></use>
-                  </svg>
-                </li>
-                <li class="stars-item">
-                  <svg class="star-filled-icon" width="20" height="19">
-                    <use href="/project-Last-5-Standing/assets/icons-B1gzs8Ny.svg#icon-star-filled"></use>
-                  </svg>
-                </li>
-                <li class="stars-item">
-                  <svg class="star-filled-icon" width="20" height="19">
-                    <use href="/project-Last-5-Standing/assets/icons-B1gzs8Ny.svg#icon-star-filled"></use>
-                  </svg>
-                </li>
-                <li class="stars-item">
-                  <svg class="star-filled-icon" width="20" height="19">
-                    <use href="/project-Last-5-Standing/assets/icons-B1gzs8Ny.svg#icon-star-filled"></use>
-                  </svg>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <p class="card-comment">
-                "A cozy little gem! CoffeeJoy has the best cold brew in town. I
-                come here every weekend!"
-              </p>
-            </li>
-          </ul>
-          <p class="card-comment-author">James Brown</p>
-        </div>
+        <ul class="stars-container">
+          <li class="stars-item">
+            <svg class="star-filled-icon" width="20" height="19">
+              <use href="/project-Last-5-Standing/assets/icons-B1gzs8Ny.svg#icon-star-filled"></use>
+            </svg>
+          </li>
+          <li class="stars-item">
+            <svg class="star-filled-icon" width="20" height="19">
+              <use href="/project-Last-5-Standing/assets/icons-B1gzs8Ny.svg#icon-star-filled"></use>
+            </svg>
+          </li>
+          <li class="stars-item">
+            <svg class="star-filled-icon" width="20" height="19">
+              <use href="/project-Last-5-Standing/assets/icons-B1gzs8Ny.svg#icon-star-filled"></use>
+            </svg>
+          </li>
+          <li class="stars-item">
+            <svg class="star-filled-icon" width="20" height="19">
+              <use href="/project-Last-5-Standing/assets/icons-B1gzs8Ny.svg#icon-star-filled"></use>
+            </svg>
+          </li>
+          <li class="stars-item">
+            <svg class="star-filled-icon" width="20" height="19">
+              <use href="/project-Last-5-Standing/assets/icons-B1gzs8Ny.svg#icon-star-filled"></use>
+            </svg>
+          </li>
+        </ul>
+        <p class="card-comment">
+          "A cozy little gem! CoffeeJoy has the best cold brew in town. I come
+          here every weekend!"
+        </p>
+        <p class="card-comment-author">James Brown</p>
       </li>
+
       <li class="testimonials-item">
-        <div class="card-wrapper">
-          <ul class="testimonials-card-content">
-            <li>
-              <ul class="stars-container">
-                <li class="stars-item">
-                  <svg class="star-filled-icon" width="20" height="19">
-                    <use href="/project-Last-5-Standing/assets/icons-B1gzs8Ny.svg#icon-star-filled"></use>
-                  </svg>
-                </li>
-                <li class="stars-item">
-                  <svg class="star-filled-icon" width="20" height="19">
-                    <use href="/project-Last-5-Standing/assets/icons-B1gzs8Ny.svg#icon-star-filled"></use>
-                  </svg>
-                </li>
-                <li class="stars-item">
-                  <svg class="star-filled-icon" width="20" height="19">
-                    <use href="/project-Last-5-Standing/assets/icons-B1gzs8Ny.svg#icon-star-filled"></use>
-                  </svg>
-                </li>
-                <li class="stars-item">
-                  <svg class="star-outline-icon" width="20" height="19">
-                    <use href="/project-Last-5-Standing/assets/icons-B1gzs8Ny.svg#icon-star-outline"></use>
-                  </svg>
-                </li>
-                <li class="stars-item">
-                  <svg class="star-outline-icon" width="20" height="19">
-                    <use href="/project-Last-5-Standing/assets/icons-B1gzs8Ny.svg#icon-star-outline"></use>
-                  </svg>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <p class="card-comment">
-                "The atmosphere is perfect for working or relaxing with friends.
-                Their Wi-Fi is fast too!"
-              </p>
-            </li>
-          </ul>
-          <p class="card-comment-author">Sarah Wilson</p>
-        </div>
+        <ul class="stars-container">
+          <li class="stars-item">
+            <svg class="star-filled-icon" width="20" height="19">
+              <use href="/project-Last-5-Standing/assets/icons-B1gzs8Ny.svg#icon-star-filled"></use>
+            </svg>
+          </li>
+          <li class="stars-item">
+            <svg class="star-filled-icon" width="20" height="19">
+              <use href="/project-Last-5-Standing/assets/icons-B1gzs8Ny.svg#icon-star-filled"></use>
+            </svg>
+          </li>
+          <li class="stars-item">
+            <svg class="star-filled-icon" width="20" height="19">
+              <use href="/project-Last-5-Standing/assets/icons-B1gzs8Ny.svg#icon-star-filled"></use>
+            </svg>
+          </li>
+          <li class="stars-item">
+            <svg class="star-outline-icon" width="20" height="19">
+              <use href="/project-Last-5-Standing/assets/icons-B1gzs8Ny.svg#icon-star-outline"></use>
+            </svg>
+          </li>
+          <li class="stars-item">
+            <svg class="star-outline-icon" width="20" height="19">
+              <use href="/project-Last-5-Standing/assets/icons-B1gzs8Ny.svg#icon-star-outline"></use>
+            </svg>
+          </li>
+        </ul>
+        <p class="card-comment">
+          "The atmosphere is perfect for working or relaxing with friends. Their
+          Wi-Fi is fast too!"
+        </p>
+        <p class="card-comment-author">Sarah Wilson</p>
       </li>
+
       <li class="testimonials-item">
-        <div class="card-wrapper">
-          <ul class="testimonials-card-content">
-            <li>
-              <ul class="stars-container">
-                <li class="stars-item">
-                  <svg class="star-filled-icon" width="20" height="19">
-                    <use href="/project-Last-5-Standing/assets/icons-B1gzs8Ny.svg#icon-star-filled"></use>
-                  </svg>
-                </li>
-                <li class="stars-item">
-                  <svg class="star-filled-icon" width="20" height="19">
-                    <use href="/project-Last-5-Standing/assets/icons-B1gzs8Ny.svg#icon-star-filled"></use>
-                  </svg>
-                </li>
-                <li class="stars-item">
-                  <svg class="star-filled-icon" width="20" height="19">
-                    <use href="/project-Last-5-Standing/assets/icons-B1gzs8Ny.svg#icon-star-filled"></use>
-                  </svg>
-                </li>
-                <li class="stars-item">
-                  <svg class="star-filled-icon" width="20" height="19">
-                    <use href="/project-Last-5-Standing/assets/icons-B1gzs8Ny.svg#icon-star-filled"></use>
-                  </svg>
-                </li>
-                <li class="stars-item">
-                  <svg class="star-outline-icon" width="20" height="19">
-                    <use href="/project-Last-5-Standing/assets/icons-B1gzs8Ny.svg#icon-star-outline"></use>
-                  </svg>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <p class="card-comment">
-                "I’m addicted to their seasonal flavors! Each one is crafted
-                with such care and creativity."
-              </p>
-            </li>
-          </ul>
-          <p class="card-comment-author">Chris Lee</p>
-        </div>
+        <ul class="stars-container">
+          <li class="stars-item">
+            <svg class="star-filled-icon" width="20" height="19">
+              <use href="/project-Last-5-Standing/assets/icons-B1gzs8Ny.svg#icon-star-filled"></use>
+            </svg>
+          </li>
+          <li class="stars-item">
+            <svg class="star-filled-icon" width="20" height="19">
+              <use href="/project-Last-5-Standing/assets/icons-B1gzs8Ny.svg#icon-star-filled"></use>
+            </svg>
+          </li>
+          <li class="stars-item">
+            <svg class="star-filled-icon" width="20" height="19">
+              <use href="/project-Last-5-Standing/assets/icons-B1gzs8Ny.svg#icon-star-filled"></use>
+            </svg>
+          </li>
+          <li class="stars-item">
+            <svg class="star-filled-icon" width="20" height="19">
+              <use href="/project-Last-5-Standing/assets/icons-B1gzs8Ny.svg#icon-star-filled"></use>
+            </svg>
+          </li>
+          <li class="stars-item">
+            <svg class="star-outline-icon" width="20" height="19">
+              <use href="/project-Last-5-Standing/assets/icons-B1gzs8Ny.svg#icon-star-outline"></use>
+            </svg>
+          </li>
+        </ul>
+        <p class="card-comment">
+          "I’m addicted to their seasonal flavors! Each one is crafted with such
+          care and creativity."
+        </p>
+        <p class="card-comment-author">Chris Lee</p>
       </li>
+
       <li class="testimonials-item">
-        <div class="card-wrapper">
-          <ul class="testimonials-card-content">
-            <li>
-              <ul class="stars-container">
-                <li class="stars-item">
-                  <svg class="star-filled-icon" width="20" height="19">
-                    <use href="/project-Last-5-Standing/assets/icons-B1gzs8Ny.svg#icon-star-filled"></use>
-                  </svg>
-                </li>
-                <li class="stars-item">
-                  <svg class="star-filled-icon" width="20" height="19">
-                    <use href="/project-Last-5-Standing/assets/icons-B1gzs8Ny.svg#icon-star-filled"></use>
-                  </svg>
-                </li>
-                <li class="stars-item">
-                  <svg class="star-filled-icon" width="20" height="19">
-                    <use href="/project-Last-5-Standing/assets/icons-B1gzs8Ny.svg#icon-star-filled"></use>
-                  </svg>
-                </li>
-                <li class="stars-item">
-                  <svg class="star-filled-icon" width="20" height="19">
-                    <use href="/project-Last-5-Standing/assets/icons-B1gzs8Ny.svg#icon-star-filled"></use>
-                  </svg>
-                </li>
-                <li class="stars-item">
-                  <svg class="star-outline-icon" width="20" height="19">
-                    <use href="/project-Last-5-Standing/assets/icons-B1gzs8Ny.svg#icon-star-outline"></use>
-                  </svg>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <p class="card-comment">
-                "I appreciate how they source their coffee beans sustainably.
-                It's great to support such an ethical business!"
-              </p>
-            </li>
-          </ul>
-          <p class="card-comment-author">Patricia Taylor</p>
-        </div>
+        <ul class="stars-container">
+          <li class="stars-item">
+            <svg class="star-filled-icon" width="20" height="19">
+              <use href="/project-Last-5-Standing/assets/icons-B1gzs8Ny.svg#icon-star-filled"></use>
+            </svg>
+          </li>
+          <li class="stars-item">
+            <svg class="star-filled-icon" width="20" height="19">
+              <use href="/project-Last-5-Standing/assets/icons-B1gzs8Ny.svg#icon-star-filled"></use>
+            </svg>
+          </li>
+          <li class="stars-item">
+            <svg class="star-filled-icon" width="20" height="19">
+              <use href="/project-Last-5-Standing/assets/icons-B1gzs8Ny.svg#icon-star-filled"></use>
+            </svg>
+          </li>
+          <li class="stars-item">
+            <svg class="star-filled-icon" width="20" height="19">
+              <use href="/project-Last-5-Standing/assets/icons-B1gzs8Ny.svg#icon-star-filled"></use>
+            </svg>
+          </li>
+          <li class="stars-item">
+            <svg class="star-outline-icon" width="20" height="19">
+              <use href="/project-Last-5-Standing/assets/icons-B1gzs8Ny.svg#icon-star-outline"></use>
+            </svg>
+          </li>
+        </ul>
+        <p class="card-comment">
+          "I appreciate how they source their coffee beans sustainably. It's
+          great to support such an ethical business!"
+        </p>
+        <p class="card-comment-author">Patricia Taylor</p>
       </li>
     </ul>
   </div>
