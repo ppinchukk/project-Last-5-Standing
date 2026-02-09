@@ -41,7 +41,7 @@
   width: 100%;
 }
 
-.subscribe-email-label {
+.subscribe-email-error {
   position: absolute;
   top: 100%;
   left: 0;
@@ -55,19 +55,9 @@
   pointer-events: none;
 }
 
-.subscribe-input:focus:invalid + .subscribe-email-label {
+.subscribe-input:not(:placeholder-shown):invalid + .subscribe-email-error {
   opacity: 1;
   transform: translateY(0);
-}
-
-.subscribe-input:invalid {
-  border: 1px solid rgba(11, 8, 3, 0.15);
-  color: #0b0803;
-}
-
-.subscribe-input:focus:invalid {
-  border: 1px solid #7f1c1c;
-  color: #7f1c1c;
 }
 
 .subscribe-input {
@@ -81,6 +71,11 @@
   font-size: 16px;
   line-height: 1.5;
   color: #0b0803;
+}
+
+.subscribe-input:not(:placeholder-shown):invalid {
+  border: 1px solid #7f1c1c;
+  color: #7f1c1c;
 }
 
 .subscribe-input:-webkit-autofill,
@@ -182,7 +177,6 @@
   }
 
   .subscribe-btn {
-    min-width: 0;
     width: 158px;
     height: 44px;
   }
