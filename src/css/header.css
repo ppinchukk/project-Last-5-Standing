@@ -1,8 +1,8 @@
 .header-container {
   display: flex;
   align-items: center;
-  max-width: 100%;
-  width: 375px;
+  width: 100%;
+  max-width: 375px;
 }
 
 .header-logo {
@@ -20,8 +20,6 @@
   background-color: transparent;
 }
 
-.burger-icon {
-}
 
 .nav-list {
   display: none;
